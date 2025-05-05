@@ -1,0 +1,36 @@
+.hero-background {
+    background-image: url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,255,255,0.7));
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-image {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.festival-credit {
+    font-size: 0.75rem;
+    color: rgba(107, 114, 128, 0.7);
+    text-align: right;
+    margin-top: 0.5rem;
+}

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 구로G페스티벌 - 아시아의 하모니: 공존과 지속의 축제</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            100: '#CCFBF1',
+                            300: '#2DD4BF',
+                            500: '#0D9488',
+                            700: '#0F766E',
+                        },
+                        secondary: {
+                            100: '#DBEAFE',
+                            300: '#93C5FD',
+                            500: '#3B82F6',
+                            700: '#1E40AF',
+                        },
+                        accent: {
+                            100: '#FFEDD5',
+                            300: '#FED7AA',
+                            500: '#FB923C',
+                            700: '#C2410C',
+                        },
+                        eco: {
+                            100: '#D1FAE5',
+                            300: '#6EE7B7',
+                            500: '#4ADE80',
+                            700: '#15803D',
+                        },
+                    },
+                    fontFamily: {
+                        'sans': ['Noto Sans KR', 'sans-serif'],
+                        'serif': ['Nanum Myeongjo', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .font-serif {
+            font-family: 'Nanum Myeongjo', serif;
+        }
+        .hero-pattern {
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgo8cmVjdCB3aWR0aD0iNTYiIGhlaWdodD0iMTAwIiBmaWxsPSIjRkFGQUY5Ij48L3JlY3Q+CjxwYXRoIGQ9Ik0yOCA2NkwwIDUwTDAgMTZMMjggMEw1NiAxNkw1NiA1MEwyOCA2NkwyOCAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0VDRkRGQiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+CjxwYXRoIGQ9Ik0yOCAwTDI4IDM0TDAgNTBMMCA4NEwyOCAxMDBMNTYgODRMNTYgNTBMMjggMzQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0VDRkRGQiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+Cjwvc3ZnPg==');
+            background-size: 56px 100px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- 네비게이션 바 -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <nav class="flex items-center justify-between flex-wrap">
+                <div class="flex items-center flex-shrink-0 mr-6">
+                    <a href="index.html" class="flex items-center">
+                        <span class="font-serif font-bold text-2xl md:text-3xl text-primary-700">구로G<span class="text-secondary-500">페스티벌</span></span>
+                    </a>
+                </div>
+                <div class="block lg:hidden">
+                    <button id="menu-toggle" class="flex items-center px-3 py-2 border rounded text-primary-500 border-primary-500 hover:text-primary-700 hover:border-primary-700">
+                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>메뉴</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="menu" class="w-full hidden flex-grow lg:flex lg:items-center lg:w-auto">
+                    <div class="text-sm lg:flex-grow">
+                        <a href="programs.html" class="block mt-4 lg:inline-block lg:mt-0 text-primary-700 hover:text-primary-500 mr-6">
+                            프로그램
+                        </a>
+                        <a href="participate.html" class="block mt-4 lg:inline-block lg:mt-0 text-primary-700 hover:text-primary-500 mr-6">
+                            참여 안내
+                        </a>
+                        <a href="https://www.gfestival.co.kr/default/product/06.php?top=4&sub=0" class="block mt-4 lg:inline-block lg:mt-0 text-primary-700 hover:text-primary-500 mr-6">
+                            갤러리
+                        </a>
+                        <a href="contact.html" class="block mt-4 lg:inline-block lg:mt-0 text-primary-700 hover:text-primary-500">
+                            문의 및 연락처
+                        </a>
+                    </div>
+                    <div class="flex items-center">
+                        <a href="index.html" class="inline-block text-sm px-4 py-2 leading-none border rounded text-accent-700 border-accent-700 hover:border-transparent hover:text-white hover:bg-accent-700 mt-4 lg:mt-0 mr-2">KO</a>
+                        <a href="index(e).html" class="inline-block text-sm px-4 py-2 leading-none border rounded text-gray-400 border-gray-300 hover:border-transparent hover:text-white hover:bg-gray-400 mt-4 lg:mt-0 mr-2">EN</a>
+                        <a href="index(c).html" class="inline-block text-sm px-4 py-2 leading-none border rounded text-gray-400 border-gray-300 hover:border-transparent hover:text-white hover:bg-gray-400 mt-4 lg:mt-0">CN</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 히어로 섹션 -->
+    <section class="hero-pattern bg-gradient-to-br from-white via-primary-100 to-secondary-100 py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="text-center md:text-left">
+                    <h1 class="font-serif font-bold text-4xl md:text-5xl lg:text-6xl text-secondary-700 mb-4">
+                        아시아의 하모니<br>
+                        <span class="text-primary-500">공존과 지속의 축제</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-700 mb-8">
+                        2025년 9월 26일 - 28일<br>
+                        안양천과 구로구 일대
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                        <a href="programs.html" class="bg-accent-500 hover:bg-accent-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-all transform hover:scale-105">
+                            프로그램 보기
+                        </a>
+                        <a href="https://notebooklm.google.com/notebook/4bb5742e-6f3d-4636-bfc2-91ffe20dec29/audio" class="bg-secondary-500 hover:bg-secondary-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-all transform hover:scale-105">
+                            음성으로 듣기
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="relative">
+                        <div class="absolute -top-10 -left-10 w-40 h-40 bg-eco-300 bg-opacity-30 rounded-full filter blur-xl"></div>
+                        <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-accent-300 bg-opacity-30 rounded-full filter blur-xl"></div><br>
+                        <img src="images/2023_3.jpg"  alt="구로G페스티벌" class="w-full h-auto rounded-lg shadow-xl" 
+                             onerror="this.onerror=null; this.src='https://via.placeholder.com/600x400?text=2025+구로G페스티벌';">
+                            <p class="festival-credit">이미지 출처: 2024 구로G페스티벌 공식 홈페이지 (www.gfestival.co.kr)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 축제 소개 섹션 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center mb-12">
+                <h2 class="font-serif font-bold text-3xl md:text-4xl text-secondary-700 mb-6">축제 소개</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    구로G페스티벌의 핵심 가치인 다문화 공존과 지역 화합을 담아낸 "아시아의 하모니: 공존과 지속의 축제"는 
+                    구로구의 다문화적 특성을 '하모니'라는 보편적 개념으로 승화시키고, 참여형, 공감형, 친환경, 아시아문화 축제라는 
+                    네 가지 주제를 유기적으로 통합합니다.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-primary-100 p-6 rounded-lg shadow-md transform transition hover:scale-105">
+                    <div class="flex justify-center mb-4">
+                        <div class="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-primary-700 mb-2 text-center">참여형 축제</h3>
+                    <p class="text-gray-700 text-center">
+                        모든 세대와 문화권의 사람들이 함께 참여하고 소통하는 열린 축제입니다.
+                    </p>
+                </div>
+                <div class="bg-secondary-100 p-6 rounded-lg shadow-md transform transition hover:scale-105">
+                    <div class="flex justify-center mb-4">
+                        <div class="w-16 h-16 bg-secondary-500 rounded-full flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-secondary-700 mb-2 text-center">공감형 축제</h3>
+                    <p class="text-gray-700 text-center">
+                        서로 다른 문화적 배경을 가진 사람들이 서로의 이야기를 나누고 공감하는 축제입니다.
+                    </p>
+                </div>
+                <div class="bg-eco-100 p-6 rounded-lg shadow-md transform transition hover:scale-105">
+                    <div class="flex justify-center mb-4">
+                        <div class="w-16 h-16 bg-eco-500 rounded-full flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-eco-700 mb-2 text-center">친환경 축제</h3>
+                    <p class="text-gray-700 text-center">
+                        환경을 생각하는 지속 가능한 방식으로 기획되고 운영되는 친환경 축제입니다.
+                    </p>
+                </div>
+                <div class="bg-accent-100 p-6 rounded-lg shadow-md transform transition hover:scale-105">
+                    <div class="flex justify-center mb-4">
+                        <div class="w-16 h-16 bg-accent-500 rounded-full flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-accent-700 mb-2 text-center">아시아문화 축제</h3>
+                    <p class="text-gray-700 text-center">
+                        다양한 아시아 문화의 아름다움과 가치를 경험하고 배울 수 있는 축제입니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- 프로그램 미리보기 섹션 -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="font-serif font-bold text-3xl md:text-4xl text-secondary-700 text-center mb-12">주요 프로그램</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 flex flex-col h-full">
+                    <div class="h-48 bg-primary-200 relative">
+                        <div class="absolute top-0 left-0 bg-primary-700 text-white px-4 py-2 rounded-br-lg">
+                            참여형 & 아시아문화
+                        </div>
+                        <div class="flex h-full items-center justify-center p-4">
+                            <div class="text-center">
+                                <div class="bg-white/30 backdrop-blur-sm p-4 rounded-lg inline-block mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-primary-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                                    </svg>
+                                </div>
+                                <h3 class="font-serif font-bold text-2xl text-primary-700 drop-shadow-md">아시아 하모니 스테이지</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <p class="text-gray-700 mb-4 flex-grow">
+                            다문화 공연 프로그램, 관객 참여형 예술 활동, 아시아 전통-현대 융합 공연 등 다양한 문화적 배경을 가진 주민들이 함께 만들어가는 공연 프로그램입니다.
+                        </p>
+                        <a href="programs.html#stage" class="inline-block bg-primary-500 hover:bg-primary-700 text-white font-bold py-2 px-4 rounded text-center">
+                            자세히 보기
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 flex flex-col h-full">
+                    <div class="h-48 bg-eco-200 relative">
+                        <div class="absolute top-0 left-0 bg-eco-700 text-white px-4 py-2 rounded-br-lg">
+                            친환경 & 참여형
+                        </div>
+                        <div class="flex h-full items-center justify-center p-4">
+                            <div class="text-center">
+                                <div class="bg-white/30 backdrop-blur-sm p-4 rounded-lg inline-block mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-eco-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <h3 class="font-serif font-bold text-2xl text-eco-700 drop-shadow-md">에코 콜라보레이션</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <p class="text-gray-700 mb-4 flex-grow">
+                            친환경 워크숍, 업사이클링 예술 프로젝트, 도시농업 전시 및 체험 등 환경 보호의 중요성을 체험하고 배우는 프로그램입니다.
+                        </p>
+                        <a href="programs.html#eco" class="inline-block bg-eco-700 hover:bg-eco-700 text-white font-bold py-2 px-4 rounded text-center">
+                            자세히 보기
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 flex flex-col h-full">
+                    <div class="h-48 bg-secondary-200 relative">
+                        <div class="absolute top-0 left-0 bg-secondary-700 text-white px-4 py-2 rounded-br-lg">
+                            공감형 & 디지털
+                        </div>
+                        <div class="flex h-full items-center justify-center p-4">
+                            <div class="text-center">
+                                <div class="bg-white/30 backdrop-blur-sm p-4 rounded-lg inline-block mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-secondary-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                                <h3 class="font-serif font-bold text-2xl text-secondary-700 drop-shadow-md">세대 간 디지털 브릿지</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <p class="text-gray-700 mb-4 flex-grow">
+                            AR/VR을 활용한 아시아 문화 체험, 세대 간 디지털 스토리텔링, 다문화 디지털 교육 등 세대와 문화를 연결하는 프로그램입니다.
+                        </p>
+                        <a href="programs.html#digital" class="inline-block bg-secondary-700 hover:bg-secondary-700 text-white font-bold py-2 px-4 rounded text-center">
+                            자세히 보기
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 flex flex-col h-full">
+                    <div class="h-48 bg-accent-200 relative">
+                        <div class="absolute top-0 left-0 bg-accent-700 text-white px-4 py-2 rounded-br-lg">
+                            참여형 & 아시아문화 & 친환경
+                        </div>
+                        <div class="flex h-full items-center justify-center p-4">
+                            <div class="text-center">
+                                <div class="bg-white/30 backdrop-blur-sm p-4 rounded-lg inline-block mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-accent-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z" />
+                                    </svg>
+                                </div>
+                                <h3 class="font-serif font-bold text-2xl text-accent-700 drop-shadow-md">아시아 푸드 앤 크래프트 마켓</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <p class="text-gray-700 mb-4 flex-grow">
+                            다문화 음식 체험, 친환경 공예품 제작 및 판매, 제로웨이스트 마켓 등 아시아 각국의 음식과 공예를 경험하는 프로그램입니다.
+                        </p>
+                        <a href="programs.html#market" class="inline-block bg-accent-700 hover:bg-accent-700 text-white font-bold py-2 px-4 rounded text-center">
+                            자세히 보기
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 일정 및 위치 섹션 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                <div>
+                    <h2 class="font-serif font-bold text-3xl text-secondary-700 mb-6">축제 일정</h2>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md mb-6">
+                        <h3 class="font-bold text-xl text-primary-700 mb-4">2025년 9월 26일 - 28일</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-24 font-bold text-secondary-700">9월 26일</div>
+                                <div>
+                                    <p class="font-medium">개막식 & 아시아 하모니 공연</p>
+                                    <p class="text-sm text-gray-600">10:00 - 21:00</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-24 font-bold text-secondary-700">9월 27일</div>
+                                <div>
+                                    <p class="font-medium">메인 프로그램 운영 & 문화의 밤</p>
+                                    <p class="text-sm text-gray-600">10:00 - 22:00</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-24 font-bold text-secondary-700">9월 28일</div>
+                                <div>
+                                    <p class="font-medium">메인 프로그램 운영 & 폐막식</p>
+                                    <p class="text-sm text-gray-600">10:00 - 18:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <a href="programs.html#schedule" class="text-secondary-700 hover:text-secondary-500 font-medium flex items-center">
+                                <span>상세 일정 보기</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="font-serif font-bold text-3xl text-secondary-700 mb-6">축제 장소</h2>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md overflow-hidden">
+                        <h3 class="font-bold text-xl text-primary-700 mb-4">안양천과 구로구 일대</h3>
+                        <div class="aspect-w-16 aspect-h-9 mb-4 rounded-lg overflow-hidden shadow-md">
+                            <!--img src="images/contactus_01.jpg" alt="축제 장소 지도" class="w-full h-full object-cover" 
+                                 onerror="this.onerror=null; this.src='https://via.placeholder.com/800x450?text=축제+장소+지도';"-->
+                        </div>
+                        <div class="space-y-2 mb-4">
+                            <p><span class="font-medium">메인 스테이지:</span> 안양천 수변공원</p>
+                            <p><span class="font-medium">에코 존:</span> 구로구청 앞 광장</p>
+                            <p><span class="font-medium">디지털 브릿지:</span> 구로디지털단지역 인근</p>
+                            <p><span class="font-medium">푸드 앤 크래프트 마켓:</span> 구로근린공원</p>
+                        </div><br>
+                        <div class="mt-4">
+                            <a href="contact.html#location" class="text-secondary-700 hover:text-secondary-500 font-medium flex items-center">
+                                <span>오시는 길 자세히 보기</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 뉴스 및 공지사항 섹션 -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="font-serif font-bold text-3xl text-secondary-700 text-center mb-12">뉴스 및 공지사항</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <span class="inline-block bg-primary-100 text-primary-700 rounded-full px-3 py-1 text-sm font-semibold mb-3">공지사항</span>
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">2025 구로G페스티벌 공식 홈페이지 오픈</h3>
+                        <p class="text-gray-600 mb-4">
+                            2025 구로G페스티벌 공식 홈페이지가 오픈되었습니다. 다양한 정보와 소식을 확인하세요.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">2025.05.01</span>
+                            <a href="#" class="text-primary-700 hover:text-primary-500 text-sm font-medium">자세히 보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <span class="inline-block bg-accent-100 text-accent-700 rounded-full px-3 py-1 text-sm font-semibold mb-3">참가자 모집</span>
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">다문화 공연 참가자 모집 안내</h3>
+                        <p class="text-gray-600 mb-4">
+                            아시아 하모니 스테이지에 참여할 다문화 공연 참가자를 모집합니다. 많은 관심과 참여 바랍니다.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">2025.05.15</span>
+                            <a href="participate.html" class="text-accent-700 hover:text-accent-500 text-sm font-medium">자세히 보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <span class="inline-block bg-eco-100 text-eco-700 rounded-full px-3 py-1 text-sm font-semibold mb-3">자원봉사</span>
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">축제 자원봉사자 모집 시작</h3>
+                        <p class="text-gray-600 mb-4">
+                            2025 구로G페스티벌을 함께 만들어갈 자원봉사자를 모집합니다. 다양한 분야에서 활동할 수 있습니다.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">2025.06.01</span>
+                            <a href="participate.html" class="text-eco-700 hover:text-eco-500 text-sm font-medium">자세히 보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="#" class="inline-block bg-white hover:bg-gray-100 text-gray-800 font-semibold py-3 px-6 border border-gray-300 rounded-lg shadow">
+                    모든 소식 보기
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 파트너 섹션 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="font-serif font-bold text-3xl text-secondary-700 text-center mb-4">파트너 & 후원사</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                2025 구로G페스티벌을 함께 만들어가는 파트너 및 후원사를 소개합니다.
+            </p>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
+                <div class="p-4 flex flex-col items-center">
+                    <div class="bg-secondary-100 w-20 h-20 rounded-lg flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-secondary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium text-gray-800 text-center">구로구청</h3>
+                    <a href="https://www.guro.go.kr/" target="_blank" class="text-xs text-gray-600 hover:text-primary-500">바로가기</a>
+                </div>
+                <div class="p-4 flex flex-col items-center">
+                    <div class="bg-eco-100 w-20 h-20 rounded-lg flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-eco-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium text-gray-800 text-center">서울시</h3>
+                    <a href="https://www.seoul.go.kr/" target="_blank" class="text-xs text-gray-600 hover:text-primary-500">바로가기</a>
+                </div>
+                <div class="p-4 flex flex-col items-center">
+                    <div class="bg-primary-100 w-20 h-20 rounded-lg flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium text-gray-800 text-center">한국문화예술위원회</h3>
+                    <a href="https://www.arko.or.kr/" target="_blank" class="text-xs text-gray-600 hover:text-primary-500">바로가기</a>
+                </div>
+                <div class="p-4 flex flex-col items-center">
+                    <div class="bg-accent-100 w-20 h-20 rounded-lg flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-accent-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium text-gray-800 text-center">환경부</h3>
+                    <a href="http://www.me.go.kr/" target="_blank" class="text-xs text-gray-600 hover:text-primary-500">바로가기</a>
+                </div>
+                <div class="p-4 flex flex-col items-center">
+                    <div class="bg-secondary-100 w-20 h-20 rounded-lg flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-secondary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium text-gray-800 text-center">IT기업</h3>
+                    <a href="https://www.guro.go.kr/www/contents.do?key=2849" target="_blank" class="text-xs text-gray-600 hover:text-primary-500">바로가기</a>
+                </div>
+                <div class="p-4 flex flex-col items-center">
+                    <div class="bg-eco-100 w-20 h-20 rounded-lg flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-eco-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium text-gray-800 text-center">다문화지원센터</h3>
+                    <a href="https://www.liveinkorea.kr/center/main/main.do" target="_blank" class="text-xs text-gray-600 hover:text-primary-500">바로가기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 뉴스레터 구독 섹션 -->
+    <section class="py-16 bg-gradient-to-r from-primary-700 to-secondary-700 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="font-serif font-bold text-3xl mb-4">최신 소식 구독하기</h2>
+                <p class="text-lg mb-8 opacity-90">
+                    축제 소식과 다양한 이벤트 정보를 가장 먼저 받아보세요.
+                </p>
+                <form class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <input type="email" placeholder="이메일 주소를 입력하세요" class="px-4 py-3 rounded-lg w-full sm:w-96 text-gray-800 focus:outline-none focus:ring-2 focus:ring-accent-500">
+                    <button type="submit" class="bg-accent-500 hover:bg-accent-700 px-6 py-3 rounded-lg font-bold transition-colors">
+                        구독하기
+                    </button>
+                </form>
+                <p class="text-sm mt-4 opacity-75">
+                    개인정보 처리방침에 따라 이메일 정보가 안전하게 관리됩니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-serif font-bold text-xl mb-4">구로G페스티벌</h3>
+                    <p class="text-gray-400 mb-4">
+                        아시아의 하모니: 공존과 지속의 축제<br>
+                        2025년 9월 26일 - 28일
+                    </p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">바로가기</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white">홈</a></li>
+                        <li><a href="programs.html" class="hover:text-white">프로그램</a></li>
+                        <li><a href="participate.html" class="hover:text-white">참여 안내</a></li>
+                        <li><a href="https://www.gfestival.co.kr/default/product/06.php?top=4&sub=0" class="hover:text-white">갤러리</a></li>
+                        <li><a href="contact.html" class="hover:text-white">문의 및 연락처</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">주요 프로그램</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="programs.html#stage" class="hover:text-white">아시아 하모니 스테이지</a></li>
+                        <li><a href="programs.html#eco" class="hover:text-white">에코 콜라보레이션</a></li>
+                        <li><a href="programs.html#digital" class="hover:text-white">세대 간 디지털 브릿지</a></li>
+                        <li><a href="programs.html#market" class="hover:text-white">아시아 푸드 앤 크래프트 마켓</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">연락처</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 mr-2 text-gray-500" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            <span>서울특별시 구로구 가마산로 27길 45</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 mr-2 text-gray-500" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            <span>박용환 010-7939-3123</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 mr-2 text-gray-500" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <span>sanoramyun8@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 구로G페스티벌 조직위원회. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 자바스크립트 -->
+    <script>
+        // 모바일 메뉴 토글
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // 스크롤 애니메이션
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.transform');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('motion-safe:animate-fadeIn');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
+}

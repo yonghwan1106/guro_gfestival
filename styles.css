@@ -1,0 +1,228 @@
+/* 공통 스타일 */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.motion-safe\:animate-fadeIn {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* 헤더 스타일 */
+header {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+header.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* 히어로 섹션 스타일 */
+.hero-animation {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+/* 프로그램 카드 효과 */
+.program-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* 이미지 호버 효과 */
+.img-hover {
+    transition: transform 0.5s ease;
+    overflow: hidden;
+}
+
+.img-hover img {
+    transition: transform 0.5s ease;
+}
+
+.img-hover:hover img {
+    transform: scale(1.05);
+}
+
+/* 버튼 효과 */
+.btn-effect {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.btn-effect:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transition: all 0.6s ease;
+}
+
+.btn-effect:hover:before {
+    left: 100%;
+}
+
+/* 파트너 로고 효과 */
+.partner-logo {
+    transition: filter 0.3s ease, transform 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.partner-logo:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+/* 카운트다운 타이머 */
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1E40AF;
+}
+
+.countdown-label {
+    font-size: 0.875rem;
+    color: #4B5563;
+}
+
+/* 반응형 조정 */
+@media (max-width: 768px) {
+    .countdown-number {
+        font-size: 1.75rem;
+    }
+    
+    .countdown-label {
+        font-size: 0.75rem;
+    }
+}
+
+/* 프로그램 일정표 */
+.schedule-timeline {
+    position: relative;
+}
+
+.schedule-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #E5E7EB;
+}
+
+.schedule-item {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 24px;
+}
+
+.schedule-item::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 8px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #2DD4BF;
+    border: 2px solid #0F766E;
+}
+
+/* 다국어 지원 폰트 */
+:lang(ko) {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+:lang(en) {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+:lang(zh) {
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+:lang(ja) {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* 접근성 향상 */
+.focus-visible:focus {
+    outline: 2px solid #3B82F6;
+    outline-offset: 2px;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #3B82F6;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* 애니메이션 */
+.fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.5s ease-out forwards;
+}
+
+.slide-in-right {
+    animation: slideInRight 0.5s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* 다크 모드 지원 */
+@media (prefers-color-scheme: dark) {
+    .dark-mode-support {
+        background-color: #1F2937;
+        color: #F9FAFB;
+    }
+}
+
+/* 아시아 문화 패턴 배경 */
+.asia-pattern-bg {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCI+CjxyZWN0IHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgZmlsbD0id2hpdGUiPjwvcmVjdD4KPHBhdGggZD0iTTAgMCBMNjAgNjAgTTYwIDAgTDAgNjAgTTAgMzAgTDMwIDAgTTMwIDYwIEw2MCAzMCBNMCAxNSBMMTUgMCBNMCA0NSBMMTUgNjAgTTQ1IDAgTDYwIDE1IE00NSA2MCBMNjAgNDUiIHN0cm9rZT0iI0VDRkRGQiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+Cjwvc3ZnPg==');
+}

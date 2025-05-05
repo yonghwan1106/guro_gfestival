@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로그램 | 2025 구로G페스티벌 - 아시아의 하모니: 공존과 지속의 축제</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            100: '#CCFBF1',
+                            300: '#2DD4BF',
+                            500: '#0D9488',
+                            700: '#0F766E',
+                        },
+                        secondary: {
+                            100: '#DBEAFE',
+                            300: '#93C5FD',
+                            500: '#3B82F6',
+                            700: '#1E40AF',
+                        },
+                        accent: {
+                            100: '#FFEDD5',
+                            300: '#FED7AA',
+                            500: '#FB923C',
+                            700: '#C2410C',
+                        },
+                        eco: {
+                            100: '#D1FAE5',
+                            300: '#6EE7B7',
+                            500: '#4ADE80',
+                            700: '#15803D',
+                        },
+                    },
+                    fontFamily: {
+                        'sans': ['Noto Sans KR', 'sans-serif'],
+                        'serif': ['Nanum Myeongjo', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .font-serif {
+            font-family: 'Nanum Myeongjo', serif;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- 네비게이션 바 -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <nav class="flex items-center justify-between flex-wrap">
+                <div class="flex items-center flex-shrink-0 mr-6">
+                    <a href="index.html" class="flex items-center">
+                        <span class="font-serif font-bold text-2xl md:text-3xl text-primary-700">구로G<span class="text-secondary-500">페스티벌</span></span>
+                    </a>
+                </div>
+                <div class="block lg:hidden">
+                    <button id="menu-toggle" class="flex items-center px-3 py-2 border rounded text-primary-500 border-primary-500 hover:text-primary-700 hover:border-primary-700">
+                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>메뉴</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="menu" class="w-full hidden flex-grow lg:flex lg:items-center lg:w-auto">
+                    <div class="text-sm lg:flex-grow">
+                        <a href="programs.html" class="block mt-4 lg:inline-block lg:mt-0 text-primary-500 font-bold mr-6 border-b-2 border-primary-500">
+                            프로그램
+                        </a>
+                        <a href="participate.html" class="block mt-4 lg:inline-block lg:mt-0 text-primary-700 hover:text-primary-500 mr-6">
+                            참여 안내
+                        </a>
+                        <a href="https://www.gfestival.co.kr/default/product/06.php?top=4&sub=0" class="block mt-4 lg:inline-block lg:mt-0 text-primary-700 hover:text-primary-500 mr-6">
+                            갤러리
+                        </a>
+                        <a href="contact.html" class="block mt-4 lg:inline-block lg:mt-0 text-primary-700 hover:text-primary-500">
+                            문의 및 연락처
+                        </a>
+                    </div>
+                    <div class="flex items-center">
+                        <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-accent-700 border-accent-700 hover:border-transparent hover:text-white hover:bg-accent-700 mt-4 lg:mt-0 mr-2">KO</a>
+                        <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-gray-400 border-gray-300 hover:border-transparent hover:text-white hover:bg-gray-400 mt-4 lg:mt-0 mr-2">EN</a>
+                        <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-gray-400 border-gray-300 hover:border-transparent hover:text-white hover:bg-gray-400 mt-4 lg:mt-0">CN</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 페이지 타이틀 섹션 -->
+    <section class="bg-gradient-to-r from-primary-700 to-secondary-700 py-12 md:py-16">
+        <div class="container mx-auto px-4">
+            <h1 class="font-serif font-bold text-3xl md:text-4xl lg:text-5xl text-white text-center">프로그램</h1>
+            <p class="text-white text-center mt-4 max-w-3xl mx-auto opacity-90">
+                2025 구로G페스티벌의 다양한 프로그램을 소개합니다. 참여형, 공감형, 친환경, 아시아문화 축제를 아우르는 풍성한 프로그램을 만나보세요.
+            </p>
+        </div>
+    </section>
+
+    <!-- 탭 메뉴 -->
+    <section class="py-8 bg-white shadow-md sticky top-20 z-40">
+        <div class="container mx-auto px-4">
+            <div class="flex overflow-x-auto pb-2 scrollbar-hide">
+                <a href="#overview" class="tab-button whitespace-nowrap px-5 py-2 rounded-full bg-secondary-100 text-secondary-700 font-medium mr-4 hover:bg-secondary-200 transition-colors">
+                    프로그램 개요
+                </a>
+                <a href="#stage" class="tab-button whitespace-nowrap px-5 py-2 rounded-full bg-primary-100 text-primary-700 font-medium mr-4 hover:bg-primary-200 transition-colors">
+                    아시아 하모니 스테이지
+                </a>
+                <a href="#eco" class="tab-button whitespace-nowrap px-5 py-2 rounded-full bg-eco-100 text-eco-700 font-medium mr-4 hover:bg-eco-200 transition-colors">
+                    에코 콜라보레이션
+                </a>
+                <a href="#digital" class="tab-button whitespace-nowrap px-5 py-2 rounded-full bg-secondary-100 text-secondary-700 font-medium mr-4 hover:bg-secondary-200 transition-colors">
+                    세대 간 디지털 브릿지
+                </a>
+                <a href="#market" class="tab-button whitespace-nowrap px-5 py-2 rounded-full bg-accent-100 text-accent-700 font-medium mr-4 hover:bg-accent-200 transition-colors">
+                    아시아 푸드 앤 크래프트 마켓
+                </a>
+                <a href="#schedule" class="tab-button whitespace-nowrap px-5 py-2 rounded-full bg-gray-100 text-gray-700 font-medium hover:bg-gray-200 transition-colors">
+                    축제 일정
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 프로그램 개요 섹션 -->
+    <section id="overview" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="font-serif font-bold text-3xl text-secondary-700 mb-8 text-center">프로그램 개요</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <p class="text-lg text-gray-700 mb-6">
+                        2025 구로G페스티벌은 "아시아의 하모니: 공존과 지속의 축제"라는 주제로, 다음 4가지 핵심 프로그램을 중심으로 구성됩니다:
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold">1</span>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl text-primary-700 mb-2">아시아 하모니 스테이지</h3>
+                                <p class="text-gray-700">
+                                    다문화 공연 프로그램, 관객 참여형 예술 활동, 아시아 전통-현대 융합 공연 등으로 구성된 문화 예술 프로그램입니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-eco-500 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold">2</span>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl text-eco-700 mb-2">에코 콜라보레이션</h3>
+                                <p class="text-gray-700">
+                                    친환경 워크숍, 업사이클링 예술 프로젝트, 도시농업 전시 및 체험 등 환경 보호의 중요성을 배우는 프로그램입니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-secondary-500 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold">3</span>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl text-secondary-700 mb-2">세대 간 디지털 브릿지</h3>
+                                <p class="text-gray-700">
+                                    AR/VR을 활용한 아시아 문화 체험, 세대 간 디지털 스토리텔링, 다문화 디지털 교육 등 디지털 기술을 활용한 프로그램입니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-accent-500 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold">4</span>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl text-accent-700 mb-2">아시아 푸드 앤 크래프트 마켓</h3>
+                                <p class="text-gray-700">
+                                    다문화 음식 체험, 친환경 공예품 제작 및 판매, 제로웨이스트 마켓 등 다양한 아시아 문화를 체험하는 프로그램입니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <p class="text-gray-700">
+                            이 4가지 프로그램은 서로 유기적으로 연결되며, 구로구의 다문화적 특성과 지역의 정체성을 살리는 방향으로 기획되었습니다. 전통과 현대, 세대 간 교류, 환경 보호의 가치를 담은 다채로운 프로그램을 통해 축제의 의미를 더욱 풍성하게 만들어갑니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 아시아 하모니 스테이지 섹션 -->
+    <section id="stage" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/3">
+                    <div class="sticky top-40">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                                </svg>
+                            </div>
+                            <h2 class="font-serif font-bold text-2xl md:text-3xl text-primary-700">아시아 하모니 스테이지</h2>
+                        </div>
+                        <p class="text-gray-700 mb-6">
+                            구로구 내 다양한 국적의 주민들이 참여하는 공연 프로그램입니다. 전통 공연과 현대적 재해석 공연이 함께 어우러지며, 관객들도 직접 참여할 수 있는 요소를 포함합니다.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-600 mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            <span>2025년 9월 26일 - 28일</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span>안양천 메인 스테이지</span>
+                        </div>
+                        <a href="participate.html#stage" class="inline-block bg-primary-500 hover:bg-primary-700 text-white font-bold py-2 px-6 rounded-lg transition-colors">
+                            참여 신청하기
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-2/3">
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                        <h3 class="font-bold text-xl text-primary-700 mb-4">프로그램 상세</h3>
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800 mb-2">다문화 하모니 공연</h4>
+                                <p class="text-gray-700 mb-4">
+                                    구로구 내 다양한 국적의 주민들이 자국의 전통 공연을 선보입니다. 한국, 중국, 베트남, 필리핀, 몽골 등 아시아 각국의 전통 음악과 춤이 함께 어우러지는 공연입니다.
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-600">
+                                        <span class="font-medium">일시:</span> 9월 26일 14:00 - 16:00<br>
+                                        <span class="font-medium">장소:</span> 안양천 메인 스테이지<br>
+                                        <span class="font-medium">참여대상:</span> 전 연령층
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800 mb-2">퓨전 아시아 콘서트</h4>
+                                <p class="text-gray-700 mb-4">
+                                    아시아 전통 음악과 현대 음악의 퓨전 공연입니다. K-pop과 아시아 각국 전통 음악의 창의적 결합으로, 전문 음악가와 지역 주민들이 함께 만들어갑니다.
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-600">
+                                        <span class="font-medium">일시:</span> 9월 27일 19:00 - 21:00<br>
+                                        <span class="font-medium">장소:</span> 안양천 메인 스테이지<br>
+                                        <span class="font-medium">참여대상:</span> 전 연령층
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800 mb-2">참여형 아시아 댄스 플래시몹</h4>
+                                <p class="text-gray-700 mb-4">
+                                    누구나 쉽게 따라할 수 있는 아시아 각국의 전통 춤 동작을 결합한 플래시몹입니다. 사전 온라인 안무 영상이 공유되며, 현장에서 함께 춤을 추는 참여형 프로그램입니다.
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-600">
+                                        <span class="font-medium">일시:</span> 9월 27일 16:00 - 17:00<br>
+                                        <span class="font-medium">장소:</span> 안양천 메인 스테이지 앞 광장<br>
+                                        <span class="font-medium">참여대상:</span> 전 연령층
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800 mb-2">아시아 스토리텔링 연극</h4>
+                                <p class="text-gray-700 mb-4">
+                                    아시아 각국의 설화와 현대 이야기를 결합한 참여형 연극입니다. 전문 극단의 기본 틀에 관객 참여 요소가 가미되어, 다양한 문화적 배경을 가진 사람들이 함께 이야기를 만들어갑니다.
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-600">
+                                        <span class="font-medium">일시:</span> 9월 28일 13:00 - 15:00<br>
+                                        <span class="font-medium">장소:</span> 안양천 메인 스테이지<br>
+                                        <span class="font-medium">참여대상:</span> 전 연령층 (특히 가족 단위 관객)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-primary-50 p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl text-primary-700 mb-4">참여 안내</h3>
+                        <ul class="space-y-3 text-gray-700 list-disc list-inside">
+                            <li>모든 공연은 무료로 관람 가능합니다.</li>
+                            <li>일부 참여형 프로그램은 사전 신청이 필요합니다.</li>
+                            <li>우천 시에는 실내 대체 공간에서 진행됩니다.</li>
+                            <li>다문화 공연 참가자 모집 기간: 2025년 6월 1일 - 7월 31일</li>
+                            <li>문의: 구로G페스티벌 사무국 (02-1234-5678)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 에코 콜라보레이션 섹션 -->
+    <section id="eco" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/3">
+                    <div class="sticky top-40">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-eco-500 rounded-full flex items-center justify-center mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                                </svg>
+                            </div>
+                            <h2 class="font-serif font-bold text-2xl md:text-3xl text-eco-700">에코 콜라보레이션</h2>
+                        </div>
+                        <p class="text-gray-700 mb-6">
+                            아시아 각국의 친환경 전통 기술과 현대 기술을 결합한 참여형 프로그램입니다. 환경 보호의 중요성을 체험을 통해 배우고, 지속가능한 생활 방식을 실천하는 계기를 제공합니다.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-600 mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-eco-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            <span>2025년 9월 26일 - 28일</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-eco-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span>구로구청 앞 광장</span>
+                        </div>
+                        <a href="participate.html#eco" class="inline-block bg-eco-500 hover:bg-eco-700 text-white font-bold py-2 px-6 rounded-lg transition-colors">
+                            참여 신청하기
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-2/3">
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                        <h3 class="font-bold text-xl text-eco-700 mb-4">프로그램 상세</h3>
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800 mb-2">아시아 업사이클링 아트 프로젝트</h4>
+                                <p class="text-gray-700 mb-4">
+                                    폐기물을 활용한 대형 예술 작품을 공동으로 제작하는 프로젝트입니다. 전문 예술가의 지도하에 축제 방문객들이 함께 작품을 만들고, 완성된 작품은 축제 후 구로구 내 공공장소에 영구 설치됩니다.
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-600">
+                                        <span class="font-medium">일시:</span> 9월 26일 - 28일 (10:00 - 18:00)<br>
+                                        <span class="font-medium">장소:</span> 구로구청 앞 광장<br>
+                                        <span class="font-medium">참여대상:</span> 전 연령층
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800 mb-2">친환경 생활용품 만들기 워크숍</h4>
+                                <p class="text-gray-700 mb-4">
+                                    아시아 각국의 전통 방식을 활용한 친환경 생활용품을 제작하는 워크숍입니다. 천연 비누, 천연 염색, 종이 재활용 등 다양한 주제로 구성되며, 일상에서 실천할 수 있는 환경 보호 방법을 배울 수 있습니다.
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-600">
+                                        <span class="font-medium">일시:</span> 9월 26일 - 28일 (10:00 - 17:00, 1시간 단위 세션)<br>
+                                        <span class="font-medium">장소:</span> 구로구청 앞 광장 워크숍 부스<br>
+                                        <span class="font-medium">참여대상:</span> 전 연령층 (사전 예약 필요)
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800 mb-2">도시농업 체험존</h4>
+                                <p class="text-gray-700 mb-4">
+                                    아시아 각국의 도시농업 방식을 전시하고 체험할 수 있는 공간입니다. 실제 작물이 자라는 모습을 관찰하고, 간단한 농사 체험도 할 수 있습니다. 축제 후 수확한 작물은 지역 복지시설에 기부됩니다.
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-600">
+                                        <span class="font-medium">일시:</span> 9월 26일 - 28일 (10:00 - 18:00)<br>
+                                        <span class="font-medium">장소:</span> 구로구청 앞 광장<br>
+                                        <span class="font-medium">참여대상:</span> 전 연령층 (특히 어린이)
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800 mb-2">친환경 패션쇼</h4>
+                                <p class="text-gray-700 mb-4">
+                                    재활용 소재로 만든 의상을 활용한 패션쇼입니다. 지역 주민과 디자이너가 협업하여 의상을 제작하고, 주민 모델이 패션쇼에 참여합니다. 아시아 각국의 전통 의상 요소와 현대 친환경 소재의 융합을 선보입니다.
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-600">
+                                        <span class="font-medium">일시:</span> 9월 27일 15:00 - 16:30<br>
+                                        <span class="font-medium">장소:</span> 구로구청 앞 광장 특설 무대<br>
+                                        <span class="font-medium">참여대상:</span> 관람은 전 연령층 가능 (참가자는 사전 모집)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-eco-50 p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl text-eco-700 mb-4">참여 안내</h3>
+                        <ul class="space-y-3 text-gray-700 list-disc list-inside">
+                            <li>친환경 생활용품 워크숍은 사전 예약제로 운영됩니다 (온라인 예약: 9월 1일부터).</li>
+                            <li>모든 체험 활동에 참여하는 분께는 에코 포인트가 지급되며, 누적 포인트로 친환경 상품을 교환할 수 있습니다.</li>
+                            <li>개인 용기 지참 시 다양한 혜택이 제공됩니다.</li>
+                            <li>친환경 패션쇼 참가자 모집 기간: 2025년 7월 1일 - 8월 15일</li>
+                            <li>문의: 구로G페스티벌 에코팀 (02-1234-5679)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 세대 간 디지털 브릿지 섹션 -->
+    <section id="digital" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/3">
+                    <div class="sticky top-40">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-secondary-500 rounded-full flex items-center justify-center mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <h2 class="font-serif font-bold text-2xl md:text-3xl text-secondary-700">세대 간 디지털 브릿지</h2>
+                        </div>
+                        <p class="text-gray-700 mb-6">
+                            노년층의 경험과 청년층의 디지털 기술이 만나는 프로그램입니다. 디지털 기술을 활용해 세대 간 소통을 증진하고, 다문화 가정 어린이들에게 디지털 교육 기회를 제공합니다.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-600 mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-secondary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            <span>2025년 9월 26일 - 28일</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-secondary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span>구로디지털단지역 인근</span>
+                        </div>
+                        <a href="participate.html#digital" class="inline-block bg-secondary-500 hover:bg-secondary-700 text-white font-bold py-2 px-6 rounded-lg transition-colors">
+                            참여 신청하기
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-2/3">
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                        <h3 class="font-bold text-xl text-secondary-700 mb-4">프로그램 상세</h3>
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800 mb-2">AR/VR 아시아 문화 여행</h4>
+                                <p class="text-gray-700 mb-4">
+                                    AR/VR 기술을 활용해 아시아 각국의 문화를 체험하는 프로그램입니다. 실제로 방문하기 어려운 아시아 각국의 문화 유산과 생활 방식을 가상으로 체험할 수 있으며, 노년층도 쉽게 이용할 수 있는 인터페이스로 설계되었습니다.
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-600">
+                                        <span class="font-medium">일시:</span> 9월 26일 - 28일 (10:00 - 18:00)<br>
+                                        <span class="font-medium">장소:</span> 구로디지털단지역 인근 IT체험관<br>
+                                        <span class="font-medium">참여대상:</span> 전 연령층
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800 mb-2">세대 공감 디지털 스토리텔링</h4>
+                                <p class="text-gray-700 mb-4">
+                                    노년층의 이야기를 청년층이 디지털 콘텐츠로 제작하는 프로그램입니다. 구로구의 역사와 변화, 다문화 가정의 이야기 등을 담아내며, 완성된 콘텐츠는 온라인 아카이브로 구축되어 지역 역사를 보존합니다.
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-600">
+                                        <span class="font-medium">일시:</span> 9월 26일 - 28일 (10:00 - 17:00, 2시간 단위 세션)<br>
+                                        <span class="font-medium">장소:</span> 구로디지털단지역 인근 IT체험관<br>
+                                        <span class="font-medium">참여대상:</span> 노년층 및 청년층 (사전 신청 필요)
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800 mb-2">다문화 디지털 리터러시 워크숍</h4>
+                                <p class="text-gray-700 mb-4">
+                                    다문화 가정 어린이와 청소년을 위한 디지털 교육 프로그램입니다. 코딩, 디지털 아트, 온라인 안전 등 다양한 주제로 구성되며, IT 전문가와 대학생 봉사자들의 지도로 진행됩니다.
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-600">
+                                        <span class="font-medium">일시:</span> 9월 26일 - 28일 (10:00 - 16:00, 2시간 단위 세션)<br>
+                                        <span class="font-medium">장소:</span> 구로디지털단지역 인근 교육장<br>
+                                        <span class="font-medium">참여대상:</span> 다문화 가정 어린이 및 청소년 (사전 신청 필요)
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800 mb-2">디지털 아시아 문화 퀴즈</h4>
+                                <p class="text-gray-700 mb-4">
+                                    태블릿이나 스마트폰을 활용한 아시아 문화 퀴즈 대회입니다. 개인 또는 팀으로 참여 가능하며, 아시아 각국의 문화와 역사에 대한 다양한 퀴즈를 통해 재미있게 학습할 수 있습니다.
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-600">
+                                        <span class="font-medium">일시:</span> 9월 27일 14:00 - 16:00<br>
+                                        <span class="font-medium">장소:</span> 구로디지털단지역 인근 IT체험관<br>
+                                        <span class="font-medium">참여대상:</span> 전 연령층 (현장 참가 가능)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-secondary-50 p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl text-secondary-700 mb-4">참여 안내</h3>
+                        <ul class="space-y-3 text-gray-700 list-disc list-inside">
+                            <li>세대 공감 디지털 스토리텔링 및 다문화 디지털 리터러시 워크숍은 사전 신청이 필요합니다.</li>
+                            <li>AR/VR 아시아 문화 여행은 현장에서 선착순으로 참여 가능합니다.</li>
+                            <li>언어 지원 봉사자가 배치되어 다문화 가정의 참여를 돕습니다.</li>
+                            <li>디지털 콘텐츠 제작 참가자 모집 기간: 2025년 7월 15일 - 8월 31일</li>
+                            <li>문의: 구로G페스티벌 디지털팀 (02-1234-5680)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 아시아 푸드 앤 크래프트 마켓 섹션 -->
+    <section id="market" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/3">
+                    <div class="sticky top-40">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-accent-500 rounded-full flex items-center justify-center mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                                </svg>
+                            </div>
+                            <h2 class="font-serif font-bold text-2xl md:text-3xl text-accent-700">아시아 푸드 앤 크래프트 마켓</h2>
+                        </div>
+                        <p class="text-gray-700 mb-6">
+                            구로구 내 다문화 가정과 소상공인들이 참여하는 마켓입니다. 아시아 각국의 음식과 공예품을 친환경적 방식으로 판매하고 체험하는 공간입니다.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-600 mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-accent-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            <span>2025년 9월 26일 - 28일</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-accent-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span>구로근린공원</span>
+                        </div>
+                        <a href="participate.html#market" class="inline-block bg-accent-500 hover:bg-accent-700 text-white font-bold py-2 px-6 rounded-lg transition-colors">
+                            참여 신청하기
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-2/3">
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                        <h3 class="font-bold text-xl text-accent-700 mb-4">프로그램 상세</h3>
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800 mb-2">다문화 푸드존</h4>
+                                <p class="text-gray-700 mb-4">
+                                    아시아 각국의 다양한 음식을 판매하고 시식할 수 있는 공간입니다. 구로구 내 다문화 가정 및 음식점이 참여하며, 친환경 용기를 사용하고 음식 설명과 레시피를 공유합니다.
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-600">
+                                        <span class="font-medium">일시:</span> 9월 26일 - 28일 (11:00 - 21:00)<br>
+                                        <span class="font-medium">장소:</span> 구로근린공원 푸드존<br>
+                                        <span class="font-medium">참여대상:</span> 전 연령층
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800 mb-2">아시아 공예 체험 부스</h4>
+                                <p class="text-gray-700 mb-4">
+                                    아시아 각국의 전통 공예를 체험하고 제품을 판매하는 부스입니다. 공예 장인의 지도로 간단한 체험 활동을 진행하며, 환경 친화적 재료를 사용한 실용적인 생활용품 제작을 중심으로 합니다.
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-600">
+                                        <span class="font-medium">일시:</span> 9월 26일 - 28일 (10:00 - 18:00)<br>
+                                        <span class="font-medium">장소:</span> 구로근린공원 공예존<br>
+                                        <span class="font-medium">참여대상:</span> 전 연령층
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800 mb-2">제로웨이스트 챌린지</h4>
+                                <p class="text-gray-700 mb-4">
+                                    마켓 내 일회용품 사용을 최소화하고 쓰레기를 줄이기 위한 캠페인입니다. 개인 용기 지참 시 할인 혜택을 제공하고, 쓰레기 없는 포장을 독려합니다. 참여도에 따라 에코 포인트가 적립되며 친환경 상품으로 교환할 수 있습니다.
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-600">
+                                        <span class="font-medium">일시:</span> 9월 26일 - 28일 (축제 전체 기간)<br>
+                                        <span class="font-medium">장소:</span> 구로근린공원 전역<br>
+                                        <span class="font-medium">참여대상:</span> 모든 마켓 참여자 및 방문객
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800 mb-2">로컬 아티스트 마켓</h4>
+                                <p class="text-gray-700 mb-4">
+                                    구로구 내 다문화 배경을 가진 예술가들의 작품을 전시하고 판매하는 마켓입니다. 소규모 부스 형태로 운영되며, 문화적 배경을 반영한 다양한 예술 작품을 만나볼 수 있습니다.
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-600">
+                                        <span class="font-medium">일시:</span> 9월 26일 - 28일 (10:00 - 19:00)<br>
+                                        <span class="font-medium">장소:</span> 구로근린공원 아트존<br>
+                                        <span class="font-medium">참여대상:</span> 전 연령층
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-accent-50 p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl text-accent-700 mb-4">참여 안내</h3>
+                        <ul class="space-y-3 text-gray-700 list-disc list-inside">
+                            <li>모든 판매자에게는 친환경 운영 가이드라인이 제공됩니다.</li>
+                            <li>개인 용기나 장바구니를 지참하면 다양한 혜택을 받을 수 있습니다.</li>
+                            <li>다국어 안내판과 통역 봉사자가 배치되어 소통을 돕습니다.</li>
+                            <li>마켓 판매자 모집 기간: 2025년 6월 1일 - 7월 31일</li>
+                            <li>문의: 구로G페스티벌 마켓팀 (02-1234-5681)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 축제 일정 섹션 -->
+    <section id="schedule" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="font-serif font-bold text-3xl text-secondary-700 mb-8 text-center">축제 일정</h2>
+            <div class="max-w-4xl mx-auto">
+                <!-- 탭 메뉴 -->
+                <div class="flex flex-wrap mb-8">
+                    <button class="day-tab flex-1 py-3 px-4 bg-secondary-700 text-white font-bold rounded-tl-lg rounded-tr-lg md:rounded-tr-none border-b-2 border-secondary-700">9월 26일 (금)</button>
+                    <button class="day-tab flex-1 py-3 px-4 bg-gray-200 text-gray-700 font-bold md:rounded-tr-none border-b-2 border-secondary-700">9월 27일 (토)</button>
+                    <button class="day-tab flex-1 py-3 px-4 bg-gray-200 text-gray-700 font-bold rounded-tr-lg border-b-2 border-secondary-700">9월 28일 (일)</button>
+                </div>
+                
+                <!-- 9월 26일 일정 -->
+                <div class="day-content bg-white p-6 rounded-b-lg shadow-md mb-12">
+                    <h3 class="font-bold text-xl text-secondary-700 mb-6">9월 26일 (금) - 개막일</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary-700">10:00</div>
+                            <div>
+                                <p class="font-medium">축제 시작 및 부스 오픈</p>
+                                <p class="text-sm text-gray-600">모든 프로그램 구역 오픈</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary-700">11:00 - 12:30</div>
+                            <div>
+                                <p class="font-medium">공식 개막식</p>
+                                <p class="text-sm text-gray-600">안양천 메인 스테이지 / 환영사 및 축하 공연</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary-700">13:00 - 14:00</div>
+                            <div>
+                                <p class="font-medium">아시아 전통 음악 공연</p>
+                                <p class="text-sm text-gray-600">안양천 메인 스테이지 / 한국, 중국, 베트남 등</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary-700">14:00 - 16:00</div>
+                            <div><p class="font-medium">다문화 하모니 공연</p>
+                                <p class="text-sm text-gray-600">안양천 메인 스테이지 / 구로구 내 다문화 주민 공연</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary-700">15:00 - 17:00</div>
+                            <div>
+                                <p class="font-medium">친환경 생활용품 워크숍</p>
+                                <p class="text-sm text-gray-600">구로구청 앞 광장 / 천연 비누 만들기 (사전 예약)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary-700">16:00 - 18:00</div>
+                            <div>
+                                <p class="font-medium">AR/VR 아시아 문화 체험</p>
+                                <p class="text-sm text-gray-600">구로디지털단지역 인근 IT체험관 / 증강현실로 만나는 아시아</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary-700">18:00 - 20:00</div>
+                            <div>
+                                <p class="font-medium">아시아 음식 체험</p>
+                                <p class="text-sm text-gray-600">구로근린공원 푸드존 / 특별 할인 이벤트</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary-700">19:00 - 21:00</div>
+                            <div>
+                                <p class="font-medium">개막 축하 콘서트</p>
+                                <p class="text-sm text-gray-600">안양천 메인 스테이지 / 유명 아티스트 공연</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 9월 27일 일정 -->
+                <div class="day-content hidden bg-white p-6 rounded-b-lg shadow-md mb-12">
+                    <h3 class="font-bold text-xl text-secondary-700 mb-6">9월 27일 (토) - 메인 프로그램</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary-700">10:00</div>
+                            <div>
+                                <p class="font-medium">축제 2일차 시작</p>
+                                <p class="text-sm text-gray-600">모든 프로그램 구역 오픈</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary-700">11:00 - 13:00</div>
+                            <div>
+                                <p class="font-medium">업사이클링 아트 워크숍</p>
+                                <p class="text-sm text-gray-600">구로구청 앞 광장 / 재활용품으로 작품 만들기</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary-700">13:00 - 15:00</div>
+                            <div>
+                                <p class="font-medium">세대 공감 디지털 스토리텔링</p>
+                                <p class="text-sm text-gray-600">구로디지털단지역 인근 IT체험관 / 노년층과 청년층의 협업</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary-700">14:00 - 16:00</div>
+                            <div>
+                                <p class="font-medium">디지털 아시아 문화 퀴즈</p>
+                                <p class="text-sm text-gray-600">구로디지털단지역 인근 IT체험관 / 우승팀 시상식</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary-700">15:00 - 16:30</div>
+                            <div>
+                                <p class="font-medium">친환경 패션쇼</p>
+                                <p class="text-sm text-gray-600">구로구청 앞 광장 특설 무대 / 재활용 소재 의상</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary-700">16:00 - 17:00</div>
+                            <div>
+                                <p class="font-medium">참여형 아시아 댄스 플래시몹</p>
+                                <p class="text-sm text-gray-600">안양천 메인 스테이지 앞 광장 / 누구나 참여 가능</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary-700">17:00 - 19:00</div>
+                            <div>
+                                <p class="font-medium">아시아 전통-현대 융합 공연</p>
+                                <p class="text-sm text-gray-600">안양천 메인 스테이지 / 전문 예술단체 공연</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary-700">19:00 - 22:00</div>
+                            <div>
+                                <p class="font-medium">아시아 문화의 밤</p>
+                                <p class="text-sm text-gray-600">축제 전역 / 야간 특별 프로그램 및 조명 쇼</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 9월 28일 일정 -->
+                <div class="day-content hidden bg-white p-6 rounded-b-lg shadow-md mb-12">
+                    <h3 class="font-bold text-xl text-secondary-700 mb-6">9월 28일 (일) - 폐막일</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary-700">10:00</div>
+                            <div>
+                                <p class="font-medium">축제 3일차 시작</p>
+                                <p class="text-sm text-gray-600">모든 프로그램 구역 오픈</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary-700">11:00 - 12:30</div>
+                            <div>
+                                <p class="font-medium">도시농업 체험 프로그램</p>
+                                <p class="text-sm text-gray-600">구로구청 앞 광장 / 아시아 전통 농법 체험</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary-700">12:00 - 14:00</div>
+                            <div>
+                                <p class="font-medium">아시아 음식 교류회</p>
+                                <p class="text-sm text-gray-600">구로근린공원 푸드존 / 각국 요리법 공유</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary-700">13:00 - 15:00</div>
+                            <div>
+                                <p class="font-medium">아시아 스토리텔링 연극</p>
+                                <p class="text-sm text-gray-600">안양천 메인 스테이지 / 관객 참여형 연극</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary-700">14:00 - 16:00</div>
+                            <div>
+                                <p class="font-medium">다문화 디지털 리터러시 워크숍</p>
+                                <p class="text-sm text-gray-600">구로디지털단지역 인근 교육장 / 성과 발표회</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary-700">15:00 - 16:30</div>
+                            <div>
+                                <p class="font-medium">업사이클링 아트 전시회</p>
+                                <p class="text-sm text-gray-600">구로구청 앞 광장 / 3일간 제작한 작품 전시</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary-700">16:00 - 17:30</div>
+                            <div>
+                                <p class="font-medium">퓨전 아시아 콘서트</p>
+                                <p class="text-sm text-gray-600">안양천 메인 스테이지 / K-pop과 아시아 전통 음악의 만남</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary-700">17:30 - 18:00</div>
+                            <div>
+                                <p class="font-medium">폐막식</p>
+                                <p class="text-sm text-gray-600">안양천 메인 스테이지 / 마무리 인사 및 다음 해 축제 안내</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-secondary-50 p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-xl text-secondary-700 mb-4">축제 안내</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>모든 프로그램은 축제 당일 현장 상황에 따라 일부 변경될 수 있습니다.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>일부 프로그램은 사전 예약이 필요하며, 현장에서도 잔여 인원에 한해 참여 가능합니다.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>우천 시에는 실내 대체 공간에서 프로그램이 진행됩니다.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>자세한 프로그램 정보 및 예약은 구로G페스티벌 공식 홈페이지에서 확인하실 수 있습니다.</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 text-center">
+                        <a href="#" class="inline-block bg-secondary-500 hover:bg-secondary-700 text-white font-bold py-2 px-6 rounded-lg transition-colors">
+                            프로그램 전체 다운로드
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-serif font-bold text-xl mb-4">구로G페스티벌</h3>
+                    <p class="text-gray-400 mb-4">
+                        아시아의 하모니: 공존과 지속의 축제<br>
+                        2025년 9월 26일 - 28일
+                    </p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">바로가기</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white">홈</a></li>
+                        <li><a href="programs.html" class="hover:text-white">프로그램</a></li>
+                        <li><a href="participate.html" class="hover:text-white">참여 안내</a></li>
+                        <li><a href="gallery.html" class="hover:text-white">갤러리</a></li>
+                        <li><a href="contact.html" class="hover:text-white">문의 및 연락처</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">주요 프로그램</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#stage" class="hover:text-white">아시아 하모니 스테이지</a></li>
+                        <li><a href="#eco" class="hover:text-white">에코 콜라보레이션</a></li>
+                        <li><a href="#digital" class="hover:text-white">세대 간 디지털 브릿지</a></li>
+                        <li><a href="#market" class="hover:text-white">아시아 푸드 앤 크래프트 마켓</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">연락처</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 mr-2 text-gray-500" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            <span>서울특별시 구로구 가마산로 27길 45</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 mr-2 text-gray-500" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            <span>박용환 010-7939-3123</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 mr-2 text-gray-500" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <span>sanoramyun8@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 구로G페스티벌 조직위원회. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 자바스크립트 -->
+    <script>
+        // 모바일 메뉴 토글
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // 일정 탭 기능
+        const dayTabs = document.querySelectorAll('.day-tab');
+        const dayContents = document.querySelectorAll('.day-content');
+        
+        dayTabs.forEach((tab, index) => {
+            tab.addEventListener('click', function() {
+                // 탭 활성화
+                dayTabs.forEach(t => {
+                    t.classList.remove('bg-secondary-700', 'text-white');
+                    t.classList.add('bg-gray-200', 'text-gray-700');
+                });
+                this.classList.remove('bg-gray-200', 'text-gray-700');
+                this.classList.add('bg-secondary-700', 'text-white');
+                
+                // 컨텐츠 표시
+                dayContents.forEach(c => c.classList.add('hidden'));
+                dayContents[index].classList.remove('hidden');
+            });
+        });
+
+        // 스크롤 시 스티키 헤더 효과
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 30) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // 탭 앵커 링크 처리
+        document.addEventListener('DOMContentLoaded', function() {
+            // URL에서 앵커 확인
+            const hash = window.location.hash;
+            if (hash) {
+                // 해당 섹션으로 스크롤 (헤더 높이 고려)
+                const targetElement = document.querySelector(hash);
+                if (targetElement) {
+                    const headerHeight = document.querySelector('header').offsetHeight + 
+                                        document.querySelector('.tab-button').closest('section').offsetHeight;
+                    window.scrollTo({
+                        top: targetElement.offsetTop - headerHeight,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+            
+            // 각 탭 링크 클릭 이벤트
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        e.preventDefault();
+                        const headerHeight = document.querySelector('header').offsetHeight + 
+                                            document.querySelector('.tab-button').closest('section').offsetHeight;
+                        window.scrollTo({
+                            top: targetElement.offsetTop - headerHeight,
+                            behavior: 'smooth'
+                        });
+                        window.location.hash = targetId;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
